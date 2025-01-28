@@ -1,0 +1,29 @@
+<div class="digit">
+  <cp-led [isOn]="dictionary[digit][0].isOn" [color]="color" />
+  <div class="verticals">
+    <cp-led
+      [isOn]="dictionary[digit][1].isOn"
+      [customClass]="'vertical'"
+      [color]="color"
+    />
+    <cp-led
+      [isOn]="dictionary[digit][2].isOn"
+      [customClass]="'vertical'"
+      [color]="color"
+    />
+  </div>
+  <cp-led [isOn]="dictionary[digit][3].isOn" [color]="color" />
+  <div class="verticals">
+    <cp-led
+      [isOn]="dictionary[digit][4].isOn"
+      [customClass]="'vertical'"
+      [color]="color"
+    />
+    <cp-led
+      [isOn]="dictionary[digit][5].isOn"
+      [customClass]="'vertical'"
+      [color]="color"
+    />
+  </div>
+  <cp-led [isOn]="dictionary[digit][6].isOn" [color]="color" />
+</div>

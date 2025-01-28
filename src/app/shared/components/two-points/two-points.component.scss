@@ -1,0 +1,12 @@
+.pointers {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.led {
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  background: #44444477;
+}

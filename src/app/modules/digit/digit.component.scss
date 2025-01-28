@@ -1,0 +1,19 @@
+.digit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 9rem;
+}
+
+.verticals {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1px 0;
+}
+
+.vertical {
+  flex: 1; 
+  margin: 0 2px;
+}
+

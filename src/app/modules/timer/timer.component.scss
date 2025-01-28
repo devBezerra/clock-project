@@ -1,0 +1,14 @@
+.timer {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.seconds {
+    display: flex;
+    gap: 20px
+}
+
+.digit {
+    width: 9rem;
+}

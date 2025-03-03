@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Colors } from '../../constants/colors';
+import { ColorService } from '../../../services/color.service';
 
 @Component({
   selector: 'cp-color-buttons',
@@ -8,11 +9,12 @@ import { Colors } from '../../constants/colors';
   styleUrl: './color-buttons.component.scss'
 })
 export class ColorButtonsComponent {
-  @Output() colorSelected = new EventEmitter<string>();
-
   public colors: Array<any> = Colors;
 
+  service = inject(ColorService);
+
   selectColor(hex: string): void {
-    this.colorSelected.emit(hex);
+    this.service.setColor(hex);
+    document.documentElement.style.setProperty('--led-color', hex);
   }
 }

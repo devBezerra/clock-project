@@ -1,3 +1,13 @@
+@import "primeicons/primeicons.css";
+
+:root {
+  --led-color: #fff;
+}
+
 body {
-    background-color: #000;
+  background-color: #000;
+}
+
+.p-button-text {
+  color: var(--led-color) !important;
 }

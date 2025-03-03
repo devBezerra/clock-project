@@ -1,18 +1,18 @@
-<cp-color-buttons (colorSelected)="changeColor($event)" />
+<cp-color-buttons />
 <div class="clock">
   <div class="hours">
-    <cp-digit [digit]="tenHours" [color]="selectedColor"></cp-digit>
-    <cp-digit [digit]="hour" [color]="selectedColor"></cp-digit>
+    <cp-digit [digit]="tenHours"></cp-digit>
+    <cp-digit [digit]="hour"></cp-digit>
   </div>
-  <cp-two-points [color]="selectedColor"></cp-two-points>
+  <cp-two-points></cp-two-points>
   <div class="minutes">
-    <cp-digit [digit]="tenMinute" [color]="selectedColor"></cp-digit>
-    <cp-digit [digit]="minute" [color]="selectedColor"></cp-digit>
+    <cp-digit [digit]="tenMinute"></cp-digit>
+    <cp-digit [digit]="minute"></cp-digit>
   </div>
-  <cp-two-points [color]="selectedColor"></cp-two-points>
+  <cp-two-points></cp-two-points>
   <div class="seconds">
-    <cp-digit [digit]="tenSecond" [color]="selectedColor"></cp-digit>
-    <cp-digit [digit]="second" [color]="selectedColor"></cp-digit>
+    <cp-digit [digit]="tenSecond"></cp-digit>
+    <cp-digit [digit]="second"></cp-digit>
   </div>
   <div class="buttons">
   </div>

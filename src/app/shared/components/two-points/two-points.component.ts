@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { ColorService } from '../../../services/color.service';
 
 @Component({
   selector: 'cp-two-points',
@@ -7,8 +8,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './two-points.component.scss'
 })
 export class TwoPointsComponent {
-  @Input() color: string = '#fff'; 
-  
+  service = inject(ColorService);
+
   public isOn = true;
   public countPoints = [0, 1];
 
